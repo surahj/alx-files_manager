@@ -20,7 +20,9 @@ class RedisClient {
     if (this.client.connected) {
       return true;
     }
-    return false;
+    else {
+        return false;
+    }
   }
 
   async get(key) {
