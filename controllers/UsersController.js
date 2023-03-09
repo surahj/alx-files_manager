@@ -1,8 +1,5 @@
 import dbClient from '../utils/db';
-// import redisClient from '../utils/redis';
 import hashPassword from '../utils/hashPassword';
-
-// const { ObjectId } = require('mongodb');
 
 exports.postNew = async (req, res) => {
   const { email, password } = req.body;
