@@ -9,7 +9,7 @@ exports.getStatus = (_req, res) => {
   res.status(200).send(json);
 };
 
-exports.getStats = async(_req, res)  => {
+exports.getStats = async (_req, res) => {
   const json = {
     users: await dbClient.nbUsers(),
     files: await dbClient.nbFiles(),
